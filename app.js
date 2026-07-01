@@ -1,18 +1,5 @@
 
-let opcion = Number(prompt("Ingrese el menu deseado:\n 1.Carne🥩 \n 2.Pescado🐟 \n 3.Verdura🥬"));
-
-switch(opcion)
-{
-    case 1:
-        console.log("Te ofrecemos vino tinto para acompañar la carne");
-        break;
-    case 2:
-        console.log("Te ofrecemos vino blanco para acompañar la carne");
-        break;
-    case 3:
-        console.log("Te ofrecemos agua para acompañar la carne");
-        break;
-    default:
-        console.log("Eleccion invalida. Por favor ingrese un numero del menu.");
-        break;    
+for (let index = 0; index < 10; index++) {
+    console.log(`${index+1}`);
+    
 }
