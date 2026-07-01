@@ -1,6 +1,5 @@
-let resultado = 0;
-for (let index = 0; index < 10; index++) {
-    resultado = resultado + index + 1;
-    
+let contador = 1;
+while (contador <= 10) {
+    console.log(`Cuenta🤓: ${contador}`);
+    contador++;
 }
-console.log(`Resultado total: ${resultado}`);
