@@ -1,8 +1,8 @@
-let ingreso = 0;
-let ahorro = 0;
-
-while (ahorro < 1000) {
-    ingreso = Number(prompt("Ingresa el nuevo monto🤩: "));
-    ahorro = ahorro + ingreso;
+let stringSalida = []
+for (let filas = 0; filas < 5; filas++) {
+    for (let asteriscos = 0; asteriscos < filas+1; asteriscos++) {
+        stringSalida.push("*");
+    }
+    console.log(stringSalida);
+    stringSalida = [];
 }
-console.log(`Objetivo alcanzado!!! $ ${ahorro}!!!`);
