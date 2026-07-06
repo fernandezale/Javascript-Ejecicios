@@ -1,14 +1,14 @@
-let intentos = 0;
-while (intentos < 3) {
-    let ingreso = Number(prompt("Ingrese el Token de Seguridad⚠️: "));
-    if(ingreso != 5555)
-    {
-        intentos++;
-        console.log(`Token invalido le quedan ${3-intentos} intentos`);
+let dia = 0;
+let horasTotales = 0;
+while (dia < 7) {
+    let horasIngresadas = Number(prompt("Ingrese las horas estudiadas🤓 del dia:"));
+    if(horasIngresadas < 0){
+        console.log("Por favor ingrese un numero positivo");
     }
-    else
-        {
-            console.log("Token ingresado correctamente👌")
-            break;
-        }
+    else{
+        horasTotales = horasTotales + horasIngresadas;
+        dia++;
+    }
+    
 }
+console.log(`Promedio de horas estudiadas por dia en una semana: ${horasTotales/7}`);
