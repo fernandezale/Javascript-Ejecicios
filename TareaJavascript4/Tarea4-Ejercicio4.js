@@ -11,7 +11,7 @@ let horasTotales = 0;
 while (dia < 7) {
     let horasIngresadas = Number(prompt("Ingrese las horas estudiadas🤓 del dia:"));
     if(horasIngresadas < 0){
-        prompt("Por favor ingrese un numero positivo");
+        alert("Por favor ingrese un numero positivo");
     }
     else{
         horasTotales = horasTotales + horasIngresadas;
