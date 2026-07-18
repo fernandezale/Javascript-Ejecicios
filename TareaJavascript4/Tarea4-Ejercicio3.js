@@ -19,5 +19,10 @@ while (intentos < 3) {
             console.log("Token ingresado correctamente👌")
             break;
         }
+
+    if(intentos === 3)
+    {
+        console.log("❌No hay mas intentos. Acceso denegado!");
+    }
 }
 

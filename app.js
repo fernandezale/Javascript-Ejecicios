@@ -1,7 +1,19 @@
-for (let filas = 0; filas < 5; filas++) {
-    let stringSalida = "";
-    for (let asteriscos = 0; asteriscos < filas+1; asteriscos++) {
-        stringSalida += "*";
+let intentos = 0;
+while (intentos < 3) {
+    let ingreso = Number(prompt("Ingrese el Token de Seguridad⚠️: "));
+    if(ingreso != 5555)
+    {
+        intentos++;
+        console.log(`Token invalido le quedan ${3-intentos} intentos`);
     }
-    console.log(stringSalida);
+    else
+        {
+            console.log("Token ingresado correctamente👌")
+            break;
+        }
+
+    if(intentos === 3)
+    {
+        console.log("❌No hay mas intentos. Acceso denegado!");
+    }
 }
