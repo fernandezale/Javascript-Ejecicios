@@ -7,11 +7,10 @@ Desafío lógico: El bucle externo controla las filas y el interno controla cuá
 Objetivo: Dominar la complejidad de los bucles anidados, fundamental para entender estructuras de datos complejas en el futuro. 
 */
 
-let stringSalida = []
 for (let filas = 0; filas < 5; filas++) {
+    let stringSalida = "";
     for (let asteriscos = 0; asteriscos < filas+1; asteriscos++) {
-        stringSalida.push("*");
+        stringSalida += "*";
     }
     console.log(stringSalida);
-    stringSalida = [];
 }

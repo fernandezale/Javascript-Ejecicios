@@ -1,15 +1,7 @@
-let ingreso = 0;
-let ahorro = 0;
-
-while (ahorro < 1000) {
-    ingreso = Number(prompt("Ingresa el nuevo monto🤩: "));
-    if(ingreso > 0)
-    {
-        ahorro = ahorro + ingreso;
+for (let filas = 0; filas < 5; filas++) {
+    let stringSalida = "";
+    for (let asteriscos = 0; asteriscos < filas+1; asteriscos++) {
+        stringSalida += "*";
     }
-    else
-    {
-        alert("Ingrese un numero positivo. No se permiten negativos!");
-    }
+    console.log(stringSalida);
 }
-console.log(`Objetivo alcanzado!!! $ ${ahorro}!!!`);
