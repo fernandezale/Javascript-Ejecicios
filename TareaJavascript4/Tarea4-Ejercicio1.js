@@ -12,6 +12,13 @@ let ahorro = 0;
 
 while (ahorro < 1000) {
     ingreso = Number(prompt("Ingresa el nuevo monto🤩: "));
-    ahorro = ahorro + ingreso;
+    if(ingreso > 0)
+    {
+        ahorro = ahorro + ingreso;
+    }
+    else
+    {
+        alert("Ingrese un numero positivo. No se permiten negativos!");
+    }
 }
 console.log(`Objetivo alcanzado!!! $ ${ahorro}!!!`);
