@@ -1,16 +1,19 @@
-const inventario = [
-    {nombre: "pinza", precio: 100},
-    {nombre: "espatula", precio: 80},
-    {nombre: "destornillador", precio: 60}
+const estudiantes = [
+  { nombre: "Ana", nota: 8 },
+  { nombre: "Beto", nota: 4 },
+  { nombre: "Carla", nota: 10 },
+  { nombre: "David", nota: 5 }
 ];
-
-const listarPrecios = (productos) =>
+const estudiantesAprobados = (estudiantesInput) =>
 {
-    const precios = productos.map((prod) =>
+    const soloAprobados = estudiantesInput.filter((estudiante) =>
     {
-        return prod.precio;
+        return estudiante.nota >= 6;
     });
-    return precios;
+    return soloAprobados.map((estudiante) =>
+        {
+            return estudiante.nombre;
+        });
 };
 
-console.log(listarPrecios(inventario));
+console.log(estudiantesAprobados(estudiantes));
