@@ -1,12 +1,11 @@
-let tempEnCelcius = [0, 10, 20, 30, 40];
+let TodasLasEdades = [12, 18, 25, 10, 30, 15];
 
-const convertirAFahrenheit = (temperaturas) => 
-{
-    const nuevasTemps = temperaturas.map((temp) =>
+const obtenerMayoresDeEdad = (edades) => 
     {
-        return (temp * 9/5) + 32;
-    });
-    return nuevasTemps;
-}
+       return edades.filter((edad) =>
+        {return edad >= 18});
+    };
 
-const tempEnFahrenheit = convertirAFahrenheit(tempEnCelcius);
+const edadesMayores = obtenerMayoresDeEdad(TodasLasEdades);
+
+console.log(edadesMayores);
