@@ -1,8 +1,16 @@
-const ventas = [100, 250, 50, 300, 120];
-const calcularTotalVentas = (ventas) =>
+const inventario = [
+    {nombre: "pinza", precio: 100},
+    {nombre: "espatula", precio: 80},
+    {nombre: "destornillador", precio: 60}
+];
+
+const listarPrecios = (productos) =>
 {
-    const totalventas = ventas.reduce((acum, produc) => acum + produc,0,);
-    return totalventas;
+    const precios = productos.map((prod) =>
+    {
+        return prod.precio;
+    });
+    return precios;
 };
 
-console.log(calcularTotalVentas(ventas));
+console.log(listarPrecios(inventario));
