@@ -1,19 +1,10 @@
-const estudiantes = [
-  { nombre: "Ana", nota: 8 },
-  { nombre: "Beto", nota: 4 },
-  { nombre: "Carla", nota: 10 },
-  { nombre: "David", nota: 5 }
-];
-const estudiantesAprobados = (estudiantesInput) =>
+const listaProducto1 = ["A10", "B20", "C30", "D40"];
+const buscarProducto = (listadeProductos,CodigoBuscado) =>
 {
-    const soloAprobados = estudiantesInput.filter((estudiante) =>
-    {
-        return estudiante.nota >= 6;
-    });
-    return soloAprobados.map((estudiante) =>
-        {
-            return estudiante.nombre;
-        });
+    const productoEncontrado = listadeProductos.find((prod) => prod === CodigoBuscado);
+
+    return productoEncontrado || "No Encontrado";
 };
 
-console.log(estudiantesAprobados(estudiantes));
+console.log(buscarProducto(listaProducto1, "C30")); // "SI"
+console.log(buscarProducto(listaProducto1, "Z99")); // "NO"

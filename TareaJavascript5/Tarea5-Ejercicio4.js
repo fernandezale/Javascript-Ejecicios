@@ -8,8 +8,8 @@ Array inicial: [100, 250, 50, 300, 120]
 const ventas = [100, 250, 50, 300, 120];
 const calcularTotalVentas = (ventas) =>
 {
-    const totalventas = ventas.reduce((acum, produc) => acum + produc,0,);
-    return totalventas;
+    const totalVentas = ventas.reduce((acum, produc) => acum + produc,0,);
+    return totalVentas;
 };
 
 console.log(calcularTotalVentas(ventas));

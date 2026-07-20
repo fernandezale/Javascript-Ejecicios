@@ -8,10 +8,7 @@ Array inicial: [12, 18, 25, 10, 30, 15]
 let TodasLasEdades = [12, 18, 25, 10, 30, 15];
 
 const obtenerMayoresDeEdad = (edades) => 
-    {
-       return edades.filter((edad) =>
-        {return edad >= 18});
-    };
+    edades.filter((edad) => edad >= 18);
 
 const edadesMayores = obtenerMayoresDeEdad(TodasLasEdades);
 
