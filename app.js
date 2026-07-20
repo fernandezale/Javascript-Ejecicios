@@ -1,32 +1,12 @@
-let total = 0;
-let eleccion; 
-let continuar = true;
-while (continuar === true) {
-    let precioIngresado = Number(prompt("Ingrese el precio del producto: "));
-    if(precioIngresado > 0)
-    {
-        total = total + precioIngresado;
-        console.log(`Total actual: ${total}`);
-    }
-    else
-    {
-        alert("Ingrese un precio valido.");
-    }
+let tempEnCelcius = [0, 10, 20, 30, 40];
 
-    
-    eleccion = prompt("Desea agregar otro producto? si/no :");
-    if(eleccion === "no")
+const convertirAFahrenheit = (temperaturas) => 
+{
+    const nuevasTemps = temperaturas.map((temp) =>
     {
-        continuar = false;
-    }
-    
+        return (temp * 9/5) + 32;
+    });
+    return nuevasTemps;
 }
 
-if(total > 5000)
-    {
-        console.log(`¡Has obtenido un 10% de descuento! El total es: ${total - total/10}`)
-    }
-else
-    {
-        console.log(`Total final sin descuento es: ${total}`);
-    }
+const tempEnFahrenheit = convertirAFahrenheit(tempEnCelcius);
