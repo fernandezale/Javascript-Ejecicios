@@ -1,17 +1,8 @@
-const listaProducto = ["A10", "B20", "C30", "D40"];
-const buscarProducto = (listaProducto,CodigoBuscado) =>
+const ventas = [100, 250, 50, 300, 120];
+const calcularTotalVentas = (ventas) =>
 {
-    const productoEncontrado = listaProducto.find((prod) =>
-    {return prod === CodigoBuscado});
-    if(productoEncontrado)
-    {
-        return productoEncontrado;
-    }
-    else
-        {
-            return "No Encontrado";
-        }
+    const totalventas = ventas.reduce((acum, produc) => acum + produc,0,);
+    return totalventas;
 };
 
-console.log(buscarProducto(listaProducto, "C30")); // "SI"
-console.log(buscarProducto(listaProducto, "Z99")); // "NO"
+console.log(calcularTotalVentas(ventas));
